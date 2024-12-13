@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dedal des Couleurs</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+    <!-- Skip Navigation Link -->
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
+    <div class="container"> 
+        <!-- Header Section -->
+        <header>
+            <h1>DEDAL <br> DES COULEURS</h1>
+            <div class="toggle-icon" onclick="toggleSidebar()">
+                <i class="fas fa-bars" aria-label="Toggle Sidebar"></i>
+            </div>
+            <nav class="navbar" role="navigation" aria-label="Main Navigation">
+                <ul>
+                    <li><a href="#Accueil" aria-label="Go to Accueil section">Accueil</a></li>
+                    <li><a href="#Œuvres" aria-label="Go to Œuvres section">Œuvres</a></li>
+                    <li><a href="#Artistes" aria-label="Go to Artistes section">Artistes</a></li>
+                    <li><a href="#Blog" aria-label="Go to Blog section">Blog</a></li>
+                    <li><a href="#Contact" aria-label="Go to Contact section">Contact</a></li>
+                </ul>
+                <div class="search-box">
+                    <input type="text" placeholder="Rechercher ..." aria-label="Search for artwork or content">
+                    <button type="submit" aria-label="Search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </nav>
+            <nav class="sidebar" role="navigation" aria-label="Sidebar Navigation">
+                <span class="close-btn" onclick="toggleSidebar()" aria-label="Close Sidebar">&times;</span>
+                <div class="search-box">
+                    <input type="text" placeholder="Rechercher ..." aria-label="Search for artwork or content">
+                    <button type="submit" aria-label="Search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <ul>
+                    <li><a href="#Accueil" aria-label="Go to Accueil section">Accueil</a></li>
+                    <li><a href="#Œuvres" aria-label="Go to Œuvres section">Œuvres</a></li>
+                    <li><a href="#Artistes" aria-label="Go to Artistes section">Artistes</a></li>
+                    <li><a href="#Blog-m" aria-label="Go to Blog section">Blog</a></li>
+                    <li><a href="#Contact-m" aria-label="Go to Contact section">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main Section -->
+        <main id="main-content" class="main-content">
+            <!-- Hero Section -->
+            <section class="slide slide-active-hero1">
+                <div class="hero1-content">
+                    <h2>Galerie d'Art <br> en ligne</h2>
+                    <p>Plongez dans un univers d'œuvres <br> exceptionnelles</p>
+                </div>
+                <img src="images/hero-img1.png" alt="Colorful abstract painting representing the art world" class="hero-img">
+            </section>
+
+            <section class="slide slide-hero2">
+                <div class="hero2-content">
+                    <h2>Achetez des <br> œuvres d'art<br> originales</h2>
+                </div>
+                <img src="images/hero-img2.png" alt="A piece of original artwork with a colorful theme" class="hero-img">
+            </section>
+
+            <section class="slide slide-hero3">
+                <div class="hero3-content">
+                    <h2>Trouvez <br> Votre Style <br>Artistique</h2>
+                    <p>Laissez-vous inspirer par des œuvres <br> uniques</p>
+                </div>
+                <img src="images/hero-img3.png" alt="An abstract painting showcasing diverse artistic styles" class="hero-img">
+            </section>
+
+            <div class="carousel-controls">
+                <button class="prev" aria-label="Previous slide">&#10094;</button>
+                <button class="next" aria-label="Next slide">&#10095;</button>
+            </div>
+        </main>
+
+        <!-- Gallery Section -->
+        <section id="Œuvres" class="gallery" aria-labelledby="gallery-heading">
+            <h3 id="gallery-heading">Explorez Nos Tableaux à Vendre</h3>
+            <p>Découvrez des œuvres uniques prêtes à sublimer votre espace et enrichir votre collection artistique.</p>
+            <div class="gallery-images">
+                <div class="art-piece">
+                    <img src="images/gallery-img1.png" alt="Painting titled Écho Bleu by Artist Name">
+                    <p>Écho Bleu</p>
+                </div>
+                <div class="art-piece">
+                    <img src="images/gallery-img2.png" alt="Painting titled Écho Bleu by Artist Name">
+                    <p>Écho Bleu</p>
+                </div>
+                <div class="art-piece">
+                    <img src="images/gallery-img3.png" alt="Painting titled Écho Bleu by Artist Name">
+                    <p>Écho Bleu</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Artist Section -->
+        <div id="Artistes" class="artist-gallery-container" aria-labelledby="artists-heading">
+            <h3 id="artists-heading">Les Grands Maîtres et leurs Œuvres</h3>
+            <div class="artist-gallery">
+                <div class="artist-piece">
+                    <img src="images/PabloPicasso-Les-rêves.png" alt="Les rêves by Pablo Picasso" />
+                    <h2>Pablo Picasso</h2>
+                    <p>Les rêves</p>
+                </div>
+                <div class="artist-piece">
+                    <img src="images/MarcChagall-Le-Violoniste-Bleu.png" alt="Le Violoniste Bleu by Marc Chagall" />
+                    <h2>Marc Chagall</h2>
+                    <p>Le Violoniste Bleu</p>
+                </div>
+                <div class="artist-piece">
+                    <img src="images/tableau-cariatide.png" alt="Cariatide by Amedeo Modigliani" />
+                    <h2>Amedeo Modigliani</h2>
+                    <p>Cariatide</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Newsletter Section -->
+        <section id="Blog" class="newsletter">
+            <h3>Restez <br>Connecté <br>à l'Art</h3>
+            <p>Abonnez-vous à notre newsletter <br> pour découvrir en avant-première<br>nos nouvelles œuvres</p>
+            <input type="email" id="email" placeholder="Votre adresse e-mail" aria-label="Enter your email address to subscribe">
+            <button aria-label="Subscribe to the newsletter">Je m'abonne</button>
+        </section>
+
+        <section id="Blog-m" class="Mnewsletter">
+            <h3>Restez Connecté <br>à l'Art</h3>
+            <p>Abonnez-vous à notre newsletter <br> pour découvrir en avant-première<br>nos nouvelles œuvres</p>
+            <input type="email" id="email-m" placeholder="Votre adresse e-mail" aria-label="Enter your email address to subscribe">
+            <button aria-label="Subscribe to the newsletter">Je m'abonne</button>
+        </section>
+
+        <!-- Footer Section -->
+        <footer id="Contact" class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <p><a href="#Accueil" aria-label="Go to Accueil">Accueil</a></p>
+                    <p><a href="#Œuvres" aria-label="Go to Œuvres">Œuvres</a></p>
+                    <p><a href="#Artistes" aria-label="Go to Artistes">Artistes</a></p>
+                </div>
+                <div class="footer-section">
+                    <p><a href="#Blog" aria-label="Go to Blog">Blog</a></p>
+                </div>
+                <div class="footer-section-">
+                    <h2>Réseaux sociaux</h2>
+                    <div class="social-links">
+                        <a href="#" aria-label="Visit our Facebook page"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Visit our Instagram page"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Visit our LinkedIn page"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section-contact">
+                    <h2>Contact</h2>
+                    <p>Tél: 01.63.45.85.56</p>
+                    <p>Fax: 01.63.45.78.52</p>
+                    <p>Adresse: 10 RUE DE LA RÉPUBLIQUE<br>75000 PARIS</p>
+                </div>
+            </div>
+        </footer>
+
+        <footer id="Contact-m" class="mobile-footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <p><a href="#Accueil" aria-label="Go to Accueil">Accueil</a></p>
+                    <p><a href="#Œuvres" aria-label="Go to Œuvres">Œuvres</a></p>
+                    <p><a href="#Artistes" aria-label="Go to Artistes">Artistes</a></p>
+                    <p><a href="#Blog" aria-label="Go to Blog">Blog</a></p>
+                </div>
+                <div class="footer-section-rs">
+                    <p><strong>Réseaux sociaux</strong></p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Visit our Facebook page"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Visit our Instagram page"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Visit our LinkedIn page"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section-contact">
+                    <h2>Contact</h2>
+                    <p>Tél: 01.63.45.85.56</p>
+                    <p>Fax: 01.63.45.78.52</p>
+                    <p>Adresse: 10 RUE DE LA RÉPUBLIQUE<br>75000 PARIS</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="gallery.js"></script>
+    <script src="sidebar-toggle.js"></script>
+
+</body>
+</html>
