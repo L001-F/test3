@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -10,69 +10,68 @@
 </head>
 
 <body>
-
     <div class="container">
-        <!-- Skip Navigation Link -->
-        <a href="#main-content" class="skip-link">Skip to main content</a>
+        <!-- Lien pour passer directement au contenu principal -->
+        <a href="#contenu-principal" class="skip-link" tabindex="0">Aller au contenu principal</a>
 
-        <!-- Header Section -->
+        <!-- En-tête -->
         <header>
-            <h1 id="main-heading">DEDAL <br> DES COULEURS</h1>
-            <div class="toggle-icon" onclick="toggleSidebar()" aria-label="Toggle sidebar">
+            <h1 id="titre-principal">DEDAL <br> DES COULEURS</h1>
+            <button class="toggle-icon" onclick="toggleSidebar()" aria-label="Afficher ou masquer la barre latérale">
                 <i class="fas fa-bars"></i>
-            </div>
-            <nav class="navbar" aria-label="Main Navigation">
+            </button>
+            <nav class="navbar" aria-label="Navigation principale">
                 <ul>
-                    <li><a href="#Accueil" aria-label="Go to Accueil">Accueil</a></li>
-                    <li><a href="#Œuvres" aria-label="Go to Œuvres">Œuvres</a></li>
-                    <li><a href="#Artistes" aria-label="Go to Artistes">Artistes</a></li>
-                    <li><a href="#Blog" aria-label="Go to Blog">Blog</a></li>
-                    <li><a href="#Contact" aria-label="Go to Contact">Contact</a></li>
+                    <li><a href="#Accueil" aria-label="Aller à la section Accueil">Accueil</a></li>
+                    <li><a href="#Œuvres" aria-label="Aller à la section Œuvres">Œuvres</a></li>
+                    <li><a href="#Artistes" aria-label="Aller à la section Artistes">Artistes</a></li>
+                    <li><a href="#Blog" aria-label="Aller à la section Blog">Blog</a></li>
+                    <li><a href="#Contact" aria-label="Aller à la section Contact">Contact</a></li>
                 </ul>
                 <div class="search-box">
-                    <label for="search" class="sr-only">Search</label>
-                    <input type="text" id="search" placeholder="Rechercher ..." aria-label="Search">
-                    <button type="submit" aria-label="Submit search">
+                    <label for="search" class="sr-only">Rechercher sur le site</label>
+                    <input type="text" id="search" placeholder="Rechercher ..." aria-label="Rechercher sur le site">
+                    <button type="submit" aria-label="Soumettre la recherche">
                         <i class="fas fa-search"></i>
                     </button>
                 </div>
             </nav>
-            <nav class="sidebar" aria-labelledby="sidebar-heading">
-                <h2 id="sidebar-heading" class="sr-only">Sidebar Navigation</h2>
-                <span class="close-btn" onclick="toggleSidebar()" aria-label="Close sidebar">&times;</span>
+            <nav class="sidebar" aria-labelledby="titre-sidebar">
+                <h2 id="titre-sidebar" class="sr-only">Navigation de la barre latérale</h2>
+                <button class="close-btn" onclick="toggleSidebar()" aria-label="Fermer la barre latérale">&times;</button>
                 <div class="search-box">
-                    <label for="search-sidebar" class="sr-only">Search sidebar</label>
-                    <input type="text" id="search-sidebar" placeholder="Rechercher ..." aria-label="Search">
-                    <button type="submit" aria-label="Submit search">
+                    <label for="search-sidebar" class="sr-only">Rechercher dans la barre latérale</label>
+                    <input type="text" id="search-sidebar" placeholder="Rechercher ..." aria-label="Rechercher dans la barre latérale">
+                    <button type="submit" aria-label="Soumettre la recherche">
                         <i class="fas fa-search"></i>
                     </button>
                 </div>
                 <ul>
-                    <li><a href="#Accueil" aria-label="Go to Accueil">Accueil</a></li>
-                    <li><a href="#Œuvres" aria-label="Go to Œuvres">Œuvres</a></li>
-                    <li><a href="#Artistes" aria-label="Go to Artistes">Artistes</a></li>
-                    <li><a href="#Blog-m" aria-label="Go to Blog">Blog</a></li>
-                    <li><a href="#Contact-m" aria-label="Go to Contact">Contact</a></li>
+                    <li><a href="#Accueil" aria-label="Aller à la section Accueil">Accueil</a></li>
+                    <li><a href="#Œuvres" aria-label="Aller à la section Œuvres">Œuvres</a></li>
+                    <li><a href="#Artistes" aria-label="Aller à la section Artistes">Artistes</a></li>
+                    <li><a href="#Blog" aria-label="Aller à la section Blog">Blog</a></li>
+                    <li><a href="#Contact" aria-label="Aller à la section Contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
 
-        <!-- Main Section -->
-        <main id="main-content" class="main-content">
-            <!-- Hero Section -->
+        <!-- Contenu principal -->
+        <main id="contenu-principal" tabindex="-1">
+            <!-- Section héros -->
             <section class="slide slide-active-hero1">
                 <div class="hero1-content">
                     <h2>Galerie d'Art <br> en ligne</h2>
                     <p>Plongez dans un univers d'œuvres <br> exceptionnelles</p>
                 </div>
-                <img src="images/hero-img1.png" alt="Art Image showing an abstract painting" class="hero-img">
+                <img src="images/hero-img1.png" alt="Peinture abstraite aux couleurs vibrantes" class="hero-img">
             </section>
 
             <section class="slide slide-hero2">
                 <div class="hero2-content">
                     <h2>Achetez des <br> œuvres d'art<br> originales</h2>
                 </div>
-                <img src="images/hero-img2.png" alt="Art Image showcasing a colorful abstract painting" class="hero-img">
+                <img src="images/hero-img2.png" alt="Galerie montrant des œuvres d'art abstraites et colorées" class="hero-img">
             </section>
 
             <section class="slide slide-hero3">
@@ -80,98 +79,38 @@
                     <h2>Trouvez <br> Votre Style <br>Artistique</h2>
                     <p>Laissez-vous inspirer par des œuvres <br> uniques</p>
                 </div>
-                <img src="images/hero-img3.png" alt="Art Image with colorful patterns" class="hero-img">
+                <img src="images/hero-img3.png" alt="Image artistique avec des éclats de couleurs vives" class="hero-img">
             </section>
 
             <div class="carousel-controls">
-                <button class="prev" aria-label="Previous slide">&#10094;</button>
-                <button class="next" aria-label="Next slide">&#10095;</button>
+                <button class="prev" aria-label="Diapositive précédente">&#10094;</button>
+                <button class="next" aria-label="Diapositive suivante">&#10095;</button>
             </div>
         </main>
 
-        <!-- Gallery Section -->
-        <section id="Œuvres" class="gallery">
-            <h3>Explorez Nos Tableaux à Vendre</h3>
-            <p>Découvrez des œuvres uniques prêtes à sublimer votre<br>espace et enrichir votre collection artistique.</p>
-            <div class="gallery-images">
-                <div class="art-piece">
-                    <img src="images/gallery-img1.png" alt="Écho Bleu - Abstract painting by an artist">
-                    <p>Écho Bleu</p>
-                </div>
-                <div class="art-piece">
-                    <img src="images/gallery-img2.png" alt="Écho Bleu - Another view of abstract art">
-                    <p>Écho Bleu</p>
-                </div>
-                <div class="art-piece">
-                    <img src="images/gallery-img3.png" alt="Abstract Art piece with bright colors">
-                    <p>Écho Bleu</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Artist Section -->
-        <div id="Artistes" class="artist-gallery-container">
-            <h3>Les Grands Maîtres et leurs Œuvres</h3>
-            <div class="artist-gallery">
-                <div class="artist-piece">
-                    <img src="images/PabloPicasso-Les-rêves.png" alt="Les rêves by Pablo Picasso">
-                    <h2>Pablo Picasso</h2>
-                    <p>Les rêves</p>
-                </div>
-                <div class="artist-piece">
-                    <img src="images/MarcChagall-Le-Violoniste-Bleu.png" alt="Le Violoniste Bleu by Marc Chagall">
-                    <h2>Marc Chagall</h2>
-                    <p>Le Violoniste Bleu</p>
-                </div>
-                <div class="artist-piece">
-                    <img src="images/tableau-cariatide.png" alt="Cariatide by Amedeo Modigliani">
-                    <h2>Amedeo Modigliani</h2>
-                    <p>Cariatide</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Newsletter Section -->
-        <section id="Blog" class="newsletter">
-            <h3>Restez <br>Connecté <br>à l'Art</h3>
-            <p>Abonnez-vous à notre newsletter <br> pour découvrir en avant-première<br>nos nouvelles œuvres</p>
-            <label for="newsletter-email" class="sr-only">Enter your email to subscribe to the newsletter</label>
-            <input type="email" id="newsletter-email" placeholder="Votre adresse e-mail" aria-label="Enter your email">
-            <button aria-label="Subscribe to the newsletter">Je m'abonne</button>
-        </section>
-
-        <section id="Blog-m" class="Mnewsletter">
-            <h3>Restez Connecté <br>à l'Art</h3>
-            <p>Abonnez-vous à notre newsletter <br> pour découvrir en avant-première<br>nos nouvelles œuvres</p>
-            <label for="mobile-newsletter-email" class="sr-only">Enter your email to subscribe to the newsletter</label>
-            <input type="email" id="mobile-newsletter-email" placeholder="Votre adresse e-mail" aria-label="Enter your email">
-            <button aria-label="Subscribe to the newsletter">Je m'abonne</button>
-        </section>
-
-        <!-- Footer Section -->
-        <footer id="Contact" class="footer">
+        <!-- Pied de page -->
+        <footer id="Contact">
             <div class="footer-content">
-                <div class="footer-section">
-                    <p><a href="#Accueil" aria-label="Go to Accueil">Accueil</a></p>
-                    <p><a href="#Œuvres" aria-label="Go to Œuvres">Œuvres</a></p>
-                    <p><a href="#Artistes" aria-label="Go to Artistes">Artistes</a></p>
+                <div>
+                    <h2>Liens rapides</h2>
+                    <nav>
+                        <ul>
+                            <li><a href="#Accueil" aria-label="Revenir à la section Accueil">Accueil</a></li>
+                            <li><a href="#Œuvres" aria-label="Aller à la section Œuvres">Œuvres</a></li>
+                        </ul>
+                    </nav>
                 </div>
-                <div class="footer-section">
-                    <p><a href="#Blog" aria-label="Go to Blog">Blog</a></p>
-                </div>
-                <div class="footer-section-">
-                    <h2>Réseaux sociaux</h2>
-                    <div class="social-links">
-                        <a href="#" aria-label="Visit our Facebook page"><i class="fab fa-facebook"></i></a>
-                        <a href="#" aria-label="Visit our Instagram page"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="Visit our Twitter page"><i class="fab fa-twitter"></i></a>
-                    </div>
+                <div>
+                    <h2>Restez connecté</h2>
+                    <nav>
+                        <a href="#" aria-label="Visiter notre page Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Visiter notre page Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Visiter notre page Twitter"><i class="fab fa-twitter"></i></a>
+                    </nav>
                 </div>
             </div>
         </footer>
     </div>
-
-    <script src="script.js"></script>
 </body>
 
 </html>
